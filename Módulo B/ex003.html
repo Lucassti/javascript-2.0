@@ -6,22 +6,23 @@
     <title>Desafio</title>
     <style>
         body{
-            background-color: darkblue;
+            background-color: white;
         }
         h1{
-            color: white;
+            color: black;
+            text-align: center;
         }
+
     </style>
 </head>
 <body>
     <h1>Desafio simples em Javascript</h1>
     <script>
-        var nome = window.prompt("Digite seu nome");
-        var letras = nome.length;
-        document.write(`Seu nome ${nome} tem ${letras} caracteres <br>`);
-        document.write(`Seu nome em Maiúsculo é ${nome.toUpperCase()} <br>`);
-        document.write(`Seu nome também em minúsculo fica ${nome.toLowerCase()}`);
-        
+        let nome = window.prompt("Digite seu nome");
+        let n1 = Number(window.prompt("Digite o primeiro número"));
+        let n2 = Number(window.prompt("Digite o segundo número"))
+        let soma = n1 + n2
+        document.write(`Seja bem-vindo <strong>${nome.toUpperCase()}</strong> número que você pediu é <strong>${soma}</strong>`);
     </script>
 </body>
 </html>
