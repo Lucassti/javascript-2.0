@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Parte 1</title>
+    <style>
+        body{
+            background-color: darkblue;
+        }
+        h1,h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores</h1>
+    <script>
+        //Operadores Aritméticos
+        /*
+        let n1 = Number(window.prompt("Digite o primeiro número"));
+        let n2 = Number(window.prompt("Digite o segundo número"))
+        let divisor = (n1 + n2) / 2
+        window.alert(divisor);
+*/
+        //Operadores Atribuição
+        /*
+        let num1 = Number(window.prompt("Digite o primeiro número:"))
+        let num2 = Number(window.prompt("Digite o segundo número:"))
+        num1 += 5
+        num2 += 5
+        let soma = num1 + num2
+        window.alert(`Seu número mais 5 em cada escolhido fica ${soma}`);
+        */
+        //Operadores Relacionais
+        /*
+        let a = 5
+        let b = 3
+        a > b; //a maior que b
+        a < b; //a menor que b
+        a >= b; //a maior ou igual a b
+        a <= b; //a menor ou igual a b
+        a == b; //a igual a b
+        a != b; //a diferente que b
+*/
+        //Operadores Lógicos
+        let idade = Number(window.prompt("Digite a sua idade:"))
+        let estado = window.prompt("Digite o seu estado:")
+        let salario = Number(window.prompt("Digite o seu salário mensal"))
+        let idade_ok = `Idade ${idade >= 18 ? "Aprovado!" : "Reprovado!"}`
+        let estado_ok = `Estado ${estado == "RJ" || estado == "SP"?"Aprovado!":"Reprovado!"}`
+        let salario_ok = `Salário ${salario >= 1200 ? "Aprovado!" : "Reprovado!"}`
+        window.alert(idade_ok);
+        window.alert(estado_ok);
+        window.alert(salario_ok);
+        
+    </script>
+</body>
+</html>
