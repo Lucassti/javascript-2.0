@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        h1, p{
+            color: white;
+        }
+        .mensagem{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando o estudo com DOM</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, molestiae? Dolorem, tempora? Cumque quam excepturi quos non quibusdam distinctio pariatur quaerat quasi sapiente recusandae? Voluptatibus expedita autem illo deserunt ex.</p>
+    <div class="mensagem">
+        <p>Exemplo de classe</p>
+    </div>
+
+    <script>
+        let texto = window.document.querySelector(".mensagem");
+        texto.style.background = "Green";
+    </script>
+</body>
+</html>
