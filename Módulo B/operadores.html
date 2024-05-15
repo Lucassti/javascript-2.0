@@ -44,6 +44,7 @@
         a != b; //a diferente que b
 */
         //Operadores Lógicos
+        /*
         let idade = Number(window.prompt("Digite a sua idade:"))
         let estado = window.prompt("Digite o seu estado:")
         let salario = Number(window.prompt("Digite o seu salário mensal"))
@@ -53,6 +54,14 @@
         window.alert(idade_ok);
         window.alert(estado_ok);
         window.alert(salario_ok);
+*/
+        let nome = window.prompt("Digite seu nome:");
+        let estado = window.prompt("Digite seu estado:");
+        let salario = Number(window.prompt("Digite seu salário:"));
+        let estado_ok = estado == "RJ" || estado == "SP" || estado == "PE" ? "Estado Aprovado!" : "Estado Reprovado!"
+        let salario_ok = salario >= 1500 ? "Valor Aprovado!" : "Valor Reprovado!"
+        window.alert(`Bem-vindo ${nome}, seu estado é ${estado} está ${estado_ok} e seu salário é de ${salario} está ${salario_ok}, tendo uma reprovação infelizmente não passou no processo seletivo.`);
+
         
     </script>
 </body>
