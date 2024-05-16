@@ -13,7 +13,9 @@
         }
         .mensagem{
             color: white;
+            font-family: sans-serif;
         }
+       
     </style>
 </head>
 <body>
@@ -24,9 +26,13 @@
     </div>
 
     <script>
+        let nome = window.prompt("Digite seu nome:");
+        let idade = Number(window.prompt("Digite sua idade:"));
+        let estado = window.prompt("Digite seu estado:");
+        let idade_ok = idade >= 18 ? "Aprovado!" : "Reprovado!"
+        let estado_ok = estado == "RJ" || estado == "SP" ? "Aprovado!" : "Reprovado!"
         let texto = window.document.querySelector(".mensagem");
-        texto.style.background = "Green";
-        texto.document.writeIn("Hello World");
+        texto.innerText = `Seja bem-vindo ${nome}, sua idade está ${idade_ok} e seu estado está ${estado_ok}, se tiver uma reprovação você está automaticamente desclassificado.`
     </script>
 </body>
 </html>
