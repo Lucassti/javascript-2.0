@@ -10,13 +10,15 @@
         <input type="number" name="number1" id="number1"> +
         <input type="number" name="number2" id="number2">
         <input type="button" value="Somar" onclick="somar()">
-    <div id="resultado">Resultado</div>
+        <div id="resultado">Resultado</div>
     <script>
         function somar(){
+            let n1 = window.document.getElementById("number1");
+            let n2 = window.document.getElementById("number2");
             let res = window.document.getElementById("resultado");
-            let n1 = window.document.getElementById("number1")
-            let n2 = window.document.getElementById("number2")
-            let soma = number1 + number2
+            let tn1 = Number(n1.value);
+            let tn2 = Number(n2.value);
+            let soma = tn1 + tn2
             res.innerHTML = `${soma}`
         }
     </script>

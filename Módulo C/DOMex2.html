@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de eventos</title>
+    <style>
+        .bloco{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(88, 65, 69);
+            text-align: center;
+        }
+        .bloco:hover{
+            cursor: pointer;
+        }
+        .bloco > p{
+            padding: 100px;
+            padding-top: 150px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando eventos com javascript</h1>
+    <div class="bloco"><p>Clique aqui</p></div>
+    <p id="num">Resultado</p>
+    <script>
+        let a = window.document.querySelector(".bloco > p");
+        let b = window.document.querySelector(".bloco");
+        let c = window.document.querySelector("#num");
+        a.addEventListener("click", clicar);
+        a.addEventListener("mouseenter", entrar);
+        a.addEventListener("mouseout", sair);
+
+        function clicar(){
+            a.innerText = "Clicou!"
+            b.style.background = "red"
+        }
+
+        function entrar(){
+            a.innerText = "Entrou Grosso!"
+            b.style.background = "rgb(88, 65, 69)"
+        }
+
+        function sair(){
+            a.innerText = "Saiu Grosso!"
+            b.style.background = "blue"
+        }
+
+    </script>
+</body>
+</html>
